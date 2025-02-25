@@ -382,7 +382,20 @@ button {
 }
 
 /* Swiper class */
+.swiper-button-next,
+.swiper-button-prev{
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+} 
 
+.swiper-button-prev{
+  left: calc(50% - 5rem);
+}
+.swiper-button-next{
+  right: calc(50% - 5rem);
+}
 
 /* VALUE */
 
