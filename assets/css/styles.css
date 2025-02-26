@@ -398,8 +398,8 @@ button {
 }
 
 /* VALUE */
-.value__container{
-  row-gap: 3rem;
+/* .value__container{ 
+  row-gap: 3rem !important;
 }
 /* .value__images{
   position: relative;
