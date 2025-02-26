@@ -60,6 +60,9 @@
 }
 
 html {
+  /* display: flex;
+  max-width: 100%;
+  overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -110,7 +113,7 @@ button {
 
 /* REUSABLE CSS CLASSES */
 .container {
-  max-width: 1024px;
+  max-width: 2000px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
