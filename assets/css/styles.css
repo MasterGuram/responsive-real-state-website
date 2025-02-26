@@ -60,9 +60,6 @@
 }
 
 html {
-  /* display: flex;
-  max-width: 100%;
-  overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -186,6 +183,17 @@ button {
   display: flex;
   align-items: center;
 }
+.nav__link {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  transition: .3s;
+}
+.nav__link:hover {
+  color: var(--first-color); /* Change color on hover if desired */
+}
 
 @media screen and (max-width: 1023px){
   .nav__menu{
@@ -228,6 +236,11 @@ button {
 .scroll-header .nav__logo{
   color: var(--first-color);
 }
+/* When the header has 'scroll-header', change link color */
+.scroll-header .nav__link {
+  color: #333 !important; /* Dark color when scrolled */
+}
+
 
 /* Active link */
 
