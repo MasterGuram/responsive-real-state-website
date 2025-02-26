@@ -236,7 +236,6 @@ button {
 .scroll-header .nav__logo{
   color: var(--first-color);
 }
-/* When the header has 'scroll-header', change link color */
 .scroll-header .nav__link {
   color: #333 !important; /* Dark color when scrolled */
 }
