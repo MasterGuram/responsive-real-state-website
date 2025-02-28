@@ -75,30 +75,34 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/* DARK LIGHT THEME */ 
-const themeButton = getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'bx-sun'
-// Previously selected topic
-const selectedTheme = localStorage.getItem('selected-theme')
-const seledIcon = localStorage.getItem('selected-icon')
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
-// We validate if the user previously shose  a topic
-if(selectedTheme){
-    // If the validation is fullfilled, we ask what the issue was to know if we activated or deactivated the dark theme
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+/* DARK LIGHT THEME */
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconMoon = 'bx-moon';
+const iconSun = 'bx-sun';
+
+// Get previously selected theme and icon from localStorage
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// Apply the saved theme and icon on page load
+if (selectedTheme) {
+    document.body.classList.toggle(darkTheme, selectedTheme === 'dark');
+    themeButton.classList.remove(iconMoon, iconSun);
+    themeButton.classList.add(selectedTheme === 'dark' ? iconSun : iconMoon);
 }
-// Activate/Deactivate the theme manually with the button
+
+// Toggle theme and icon on button click
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark theme icon 
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+    const isDark = document.body.classList.toggle(darkTheme);
+
+    // Remove both icons and add the correct one
+    themeButton.classList.remove(iconMoon, iconSun);
+    themeButton.classList.add(isDark ? iconSun : iconMoon);
+
+    // Save the selected theme and icon
+    localStorage.setItem('selected-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('selected-icon', isDark ? iconSun : iconMoon);
+});
 
 /* SCROLL REVEAL ANIMATION */
