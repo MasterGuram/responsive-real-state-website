@@ -104,3 +104,20 @@ themeButton.addEventListener('click', () => {
 });
 
 /* SCROLL REVEAL ANIMATION */
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay:400,
+    // reset: true
+})
+
+sr.reveal(`.home__title, .popular__container`)
+sr.reveal(`.home__description`, {delay: 500})
+sr.reveal(`.home__search`, {delay: 500})
+sr.reveal(`.home__value`, {delay: 700})
+sr.reveal(`.home__images, .footer__container`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.logos__img`, {interval: 100})
+sr.reveal(`.contact__content, .contact__title`, {origin: 'left'})
+sr.reveal(`.contact__images`, {origin: 'right'})
+sr.reveal(`.subscribe__container`, {scale: 0.5})

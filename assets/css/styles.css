@@ -1004,9 +1004,16 @@ body.dark-theme{
   }
 }
 
-@media screen and (min-width: 1040px){
-  
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 1.5;
+  }
 }
 
+@media screen and (min-width: 3848px){
+  .body{
+    zoom: 2;
+  }
+}
 
-/* For 2K & 4K resolutions */
