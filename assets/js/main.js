@@ -80,11 +80,9 @@ const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconMoon = 'bx-moon';
 const iconSun = 'bx-sun';
-
 // Get previously selected theme and icon from localStorage
 const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
-
 // Apply the saved theme and icon on page load
 if (selectedTheme) {
     document.body.classList.toggle(darkTheme, selectedTheme === 'dark');
