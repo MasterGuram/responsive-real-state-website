@@ -232,7 +232,7 @@ body.dark-theme{
   align-items: center;
 }
 .nav__link {
-  color: #fff; /* White text color */
+  /* color: #fff; */
   text-decoration: none; /* Remove underline */
   display: inline-flex;
   align-items: center;
@@ -287,10 +287,6 @@ body.dark-theme{
 .scroll-header .change-theme{
   color: var(--title-color);
 }
-.scroll-header .nav__link {
-  color: #333 !important; /* Dark color when scrolled */
-}
-
 
 /* Active link */
 .active-link{
