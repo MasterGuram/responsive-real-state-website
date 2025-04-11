@@ -407,6 +407,10 @@ body.dark-theme{
 }
 
 /* LOGOS */
+.hidden{
+  position: absolute;
+  left: -9999px;
+}
 .logos__container{
   padding-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
