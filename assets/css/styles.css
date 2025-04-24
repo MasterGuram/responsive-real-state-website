@@ -779,7 +779,7 @@ body.dark-theme{
     justify-content: center;
   }
   .service-list,
-  .property-list { grid-template-columns: 1fr 1fr; }
+  .property-list {grid-template-columns: 1fr 1fr;}
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
