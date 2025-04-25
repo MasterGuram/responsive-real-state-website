@@ -778,6 +778,11 @@ body.dark-theme{
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
   }
+  .agents_pro{
+    display: flex;
+    flex-wrap: nowrap; /* or wrap if you want it responsive */
+    gap: 1.5rem;
+  }
   .service-list,
   .property-list {grid-template-columns: 1fr 1fr;}
   .contact__container{
