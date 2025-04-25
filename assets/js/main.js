@@ -99,3 +99,5 @@ sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.contact__content, .contact__title`, {origin: 'left'})
 sr.reveal(`.contact__images`, {origin: 'right'})
 sr.reveal(`.subscribe__container`, {scale: 0.5})
+sr.reveal(`.agents_pro`, {origin: 'bottom'})
+
