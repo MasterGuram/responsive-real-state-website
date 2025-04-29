@@ -13,7 +13,6 @@ var swiperPopular = new Swiper(".popular__container", {
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
-
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

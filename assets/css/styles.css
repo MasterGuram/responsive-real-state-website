@@ -750,7 +750,7 @@ body.dark-theme{
 /* For medium devices */
 @media screen and (min-width: 676px){
   .nav__menu{
-    width: 342px;
+    width: 400px;
   }
   .home__search{
     width: 412px;
