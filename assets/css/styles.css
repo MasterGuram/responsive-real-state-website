@@ -960,11 +960,29 @@ body.dark-theme{
   }
 }
 
+@media screen and (min-width: 1130px){
+  .contact__card{
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media screen and (min-width: 1230px){
+  .contact__card{
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
 @media screen and (min-width: 1390px){
   .agents_pro{
     display: flex;
     flex-wrap: nowrap; /* or wrap if you want it responsive */
     gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1430px){
+  .contact__card{
+    grid-template-columns: repeat(2, 400px);
   }
 }
 
