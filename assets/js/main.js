@@ -47,7 +47,7 @@ window.addEventListener('scroll', scrollActive);
 
 /* SHOW SCROLL UP */ 
 function scrollUp(){
-    const scrollUp = document.getElementById('.scroll-up');
+    const scrollUp = document.getElementById('scroll-up');
     if(this.scrollY >= 350) scrollUp.classList.add('show-scroll');
 }
 window.addEventListener('scroll', scrollUp)
