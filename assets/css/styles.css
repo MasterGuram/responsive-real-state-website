@@ -964,11 +964,17 @@ body.dark-theme{
   .contact__card{
     grid-template-columns: repeat(2, 250px);
   }
+  .footer__content {
+    gap: 5rem 6rem
+  }
 }
 
 @media screen and (min-width: 1230px){
   .contact__card{
     grid-template-columns: repeat(2, 300px);
+  }
+  .footer__content {
+    gap: 5rem 7rem
   }
 }
 
@@ -978,11 +984,35 @@ body.dark-theme{
     flex-wrap: nowrap; /* or wrap if you want it responsive */
     gap: 1.5rem;
   }
+  .footer__content {
+    gap: 5rem 8rem
+  }
 }
 
 @media screen and (min-width: 1430px){
   .contact__card{
     grid-template-columns: repeat(2, 400px);
+  }
+  .footer__content {
+    gap: 5rem 10rem
+  }
+}
+
+@media screen and (min-width: 1530px){
+  .footer__content {
+    gap: 5rem 12rem
+  }
+}
+
+@media screen and (min-width: 1630px){
+  .footer__content {
+    gap: 5rem 14rem
+  }
+}
+
+@media screen and (min-width: 1730px){
+  .footer__content {
+    gap: 5rem 16rem
   }
 }
 
