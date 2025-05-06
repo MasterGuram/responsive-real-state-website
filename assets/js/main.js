@@ -77,7 +77,7 @@ window.addEventListener('scroll', scrollActive);
 /* SHOW SCROLL UP */ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
-    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll');
+    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -124,8 +124,8 @@ sr.reveal(`.home__search`, {delay: 200})
 sr.reveal(`.home__value`, {delay: 300})
 sr.reveal(`.home__images, .footer__container`, {delay: 300, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
-sr.reveal(`.contact__content, .contact__title, .card-left`, {origin: 'left'})
+sr.reveal(`.contact__content, .contact__title, .card-left, .value__img`, {origin: 'left'})
 sr.reveal(`.contact__images, .card-right`, {origin: 'right'})
-sr.reveal(`.subscribe__container`, {scale: 0.5})
+sr.reveal(`.subscribe__container, .value__content`, {scale: 0.5})
 sr.reveal(`.agents_pro`, {origin: 'bottom'})
 

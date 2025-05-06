@@ -480,10 +480,6 @@ body.dark-theme{
   height: 300px;
   border-radius: 10%;
 }
-.value__description{
-  font-size: var(--small-font-size);
-  margin-bottom: 2rem;
-}
 .value__accord{
   display: grid;
   row-gap: 1.5rem;
@@ -760,7 +756,7 @@ body.dark-theme{
 .scrollup{
   position: fixed;
   right: 1rem;
-  bottom: 8rem;
+  bottom: -30%;
   background-color: var(--container-color);
   box-shadow: 0 8px 12px hsla(228, 66%, 45%, .1);
   display: inline-flex;
@@ -771,7 +767,7 @@ body.dark-theme{
   z-index: var(--z-tooltip);
   transition: .3s;
 }
-.scrollup{
+.scrollup:hover{
   transform: translateY(-.25rem);
   color: var(--first-color);
 }
@@ -822,8 +818,9 @@ body.dark-theme{
     width: 230px;
     padding: .5rem .5rem .75rem;
   }
-  .subscribe__container{
-    padding: 2rem 1rem;
+  .value__img{
+    width: 220px;
+    height: 260px;
   }
 }
 
@@ -848,6 +845,7 @@ body.dark-theme{
     gap: 2rem;
   }
 }
+
 @media screen and (min-width: 767px){
   .home__container{
     grid-template-columns: repeat(2, 1fr);
@@ -863,12 +861,13 @@ body.dark-theme{
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
   }
-  .service-list,
-  .property-list {grid-template-columns: 1fr 1fr;}
+  .value__container,
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  .service-list,
+  .property-list {grid-template-columns: 1fr 1fr;}
   .contact__images{
     order: 1;
   }
@@ -974,6 +973,28 @@ body.dark-theme{
   }
   .popular__data{
     padding: 0 .25rem 0 .75rem;
+  }
+  .value__container{
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
+  .value__img img{
+    width: 461px;
+    height: 601px;
+  }
+  .value__description{
+    font-size: var(--normal-font-size);
+    margin-bottom: 2.5rem;
+  }
+  .value__accord-title{
+    font-size: var(--normal-font-size);
+  }
+  .value__accord-item{
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
+  .value__accord-description{
+    padding-bottom: 1rem;
+    font-size: var(--small-font-size);
   }
   .service-list,
   .property-list { grid-template-columns: repeat(3, 1fr); }
