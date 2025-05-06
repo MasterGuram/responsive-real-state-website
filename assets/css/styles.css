@@ -466,6 +466,21 @@ body.dark-theme{
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 
+/* Value */
+.value__container{
+  row-gap: 3rem;
+}
+.value__images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.value__img{
+  width: 250px;
+  height: 300px;
+  border-radius: 10%;
+}
+
 /* Swiper class */
 .swiper-button-next,
 .swiper-button-prev{
