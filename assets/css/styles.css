@@ -533,6 +533,18 @@ body.dark-theme{
   height: 0;
   transition: all .25s ease;
 }
+.accord-open{
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+.accord-open .value__accord-icon{
+  box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+}
+.accord-open .value__accord-arrow{
+  box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+}
+.accord-open .value__accord-arrow i{
+  transform: rotate(-180deg);
+}
 
 /* Swiper class */
 .swiper-button-next,
