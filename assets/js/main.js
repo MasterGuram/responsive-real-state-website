@@ -19,6 +19,35 @@ var swiperPopular = new Swiper(".popular__container", {
     },
 });
 
+// Value
+const accordItems = document.querySelectorAll('.value__accord-item')
+
+accordItems.forEach((item) =>{
+    const accordHeader = item.querySelector('.value__accord-header')
+
+    accordHeader.addEventListener('click', () =>{
+        const openItem = document.querySelector('.accord-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem!== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item) =>{
+    const accordContent = item.querySelector('.value__accord-content')
+
+    if(item.classList.contains('accord-open')){
+        accordContent.removeAttribute('style')
+        item.classList.remove('accord-open')
+    }else{
+        accordContent.style.height = accordContent.scrollHeight + 'px'
+        item.classList.add('accord-open')
+    }
+}
+
 /* SCROLL SECTIONS ACTIVE LINK */
 const sections = document.querySelectorAll('section[id]')
 
